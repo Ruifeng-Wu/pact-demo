@@ -9,13 +9,13 @@ describe('Pact', () => {
 
     // 1. 创建一个Pact对象，其表示依赖的一个生产者端
     const provider = pact({
-        consumer: 'ConsumerService',
+        consumer: 'ConsumerApp',
         provider: 'ProviderService',
         port: 8080,
         log: path.resolve(process.cwd(), 'logs', 'pact.log'),
         dir: path.resolve(process.cwd(), 'pacts'),// json文件生成位置
         logLevel: 'INFO',
-        spec: 2
+        spec: 1
     });
 
     describe('when there is matched user', () => {
