@@ -1,0 +1,24 @@
+{
+  "name": "pact-demo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "ctest": "mocha --timeout 15000 service/consumer/consumer-test.js",
+    "ptest": "mocha --timeout 15000 service/provider/provider-test.js",
+    "push": "node service/consumer/publishPacts.js",
+    "run-provider": "node service/provider/provider.js",
+    "run-consumer": "node service/consumer/consumer.js"
+  },
+  "dependencies": {
+    "@pact-foundation/pact-node": "^4.8.3",
+    "body-parser": "1.15.2",
+    "express": "^4.16.3",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.3.0",
+    "pact": "^4.3.2"
+  }
+}
