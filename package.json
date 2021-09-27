@@ -7,7 +7,8 @@
     "ptest": "mocha --timeout 15000 service/provider/provider-test.js",
     "push": "node service/consumer/publishPacts.js",
     "run-provider": "node service/provider/provider.js",
-    "run-consumer": "node service/consumer/consumer.js"
+    "run-consumer": "node service/consumer/consumer.js",
+    "broker": "docker-compose -f ./pact-broker/docker-compose.yml up"
   },
   "dependencies": {
     "@pact-foundation/pact-node": "^4.8.3",
