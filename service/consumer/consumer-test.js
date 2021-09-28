@@ -15,7 +15,7 @@ describe('Pact', () => {
         log: path.resolve(process.cwd(), 'logs', 'pact.log'),
         dir: path.resolve(process.cwd(), 'pacts'),// json文件生成位置
         logLevel: 'INFO',
-        spec: 1
+        spec: 2
     });
 
     describe('when there is matched user', () => {

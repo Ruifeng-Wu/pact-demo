@@ -6,14 +6,15 @@
     "ctest": "mocha --timeout 15000 service/consumer/consumer-test.js",
     "ptest": "mocha --timeout 15000 service/provider/provider-test.js",
     "push": "node service/consumer/publishPacts.js",
-    "run-provider": "node service/provider/provider.js",
-    "run-consumer": "node service/consumer/consumer.js",
+    "run-provider": "nodemon service/provider/provider.js",
+    "run-consumer": "nodemon service/consumer/consumer.js",
     "broker": "docker-compose -f ./pact-broker/docker-compose.yml up"
   },
   "dependencies": {
     "@pact-foundation/pact-node": "^4.8.3",
     "body-parser": "1.15.2",
     "express": "^4.16.3",
+    "nodemon": "^2.0.13",
     "request-promise": "^4.2.2"
   },
   "devDependencies": {

@@ -9,7 +9,8 @@ describe('Pact Verification', () => {
             providerBaseUrl: 'http://localhost:8081',
             providerGetUser: 'http://localhost:8081/user/:id',
             pactUrls: [path.resolve(process.cwd(), 'pacts/consumerapp-providerservice.json')]
-            // pactUrls: ['http://localhost:8081/pacts/provider/providerservice/consumer/consumerapp/latest']
+            // pactUrls: ['http://localhost:8088/pacts/provider/ProviderService/consumer/ConsumerApp/latest']
+
         }
 
         return verifier.verifyProvider(opts)
